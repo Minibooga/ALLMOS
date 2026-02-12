@@ -20,7 +20,9 @@ def lockscreen():
     allmos()
   else:
     print("Invalid username or password.")
-    lockscreen()
+    print("Rerun the script, python allm.py")
+    print("Program end.")
+    
 
 
 
