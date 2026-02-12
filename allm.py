@@ -16,7 +16,7 @@ def load_users():
         return json.load(f)
     except Exeption:
         return {}
-    return{}
+    return  {}
 
 def save_users(users):
   """Save users to file"""
@@ -34,9 +34,9 @@ def login():
     print("\n---LOGIN---")
     print("1. Login")
     print("2. Register")
-    option=input(Select:)
+    option=input("Select:")
 
-    if choice=="1":
+    if option=="1":
       usrname = input("Enter your username: ")
       pwd = input("Enter your password: ")
 
@@ -48,7 +48,7 @@ def login():
       else:
         print("Invalid username or password. Did you have an account saved?")
 
-    elif choice == "2"
+    elif choice == "2":
       usrname=input("Please input your username: ")
     if usrname in users:
       print("User exists.")
@@ -90,7 +90,7 @@ def allmos():
     print("2. Notes")
     print("3. Passwords")
     print("4. Bye-bye!")
-    option = input(Select program: )
+    option = input("Select program: ")
 
     if option == "1":
       file_manager()
@@ -98,7 +98,7 @@ def allmos():
       note_app()
     elif option == "3":
       password_manager()
-    elif option == "4"
+    elif option == "4":
       print("logging out...")
       break
     else:
