@@ -18,6 +18,8 @@ def login():
     login()
 
 def lockscreen():
+  global cfp
+  global usrname
   print("Welcome to ALLM OS")
   un=input("Enter your username: ")
   pw=input(f"Enter {un}'s password: ")
@@ -26,8 +28,7 @@ def lockscreen():
     allmos()
   else:
     print("Invalid username or password.")
-    print("Rerun the script, python allm.py")
-    print("Program end.")
+    lockscreen()
     
 
 
