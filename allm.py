@@ -20,7 +20,7 @@ def login():
 def lockscreen():
   print("Welcome to ALLM OS")
   un=input("Enter your username: ")
-  pw=input(f"Enter ", un, "s password: ")
+  pw=input(f"Enter {un}'s password: ")
   if un==usrname and pw==cfp:
     print("Welcome to ALLM OS!")
     allmos()
