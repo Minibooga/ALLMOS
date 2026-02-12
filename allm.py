@@ -81,6 +81,28 @@ def lockscreen():
       break
     else:
       print("Invalid username or password.")
+
+def allmos():
+  print("welcome to ALLM OS 1.")
+  while True:
+    print("\n--Utility Launcher--")
+    print("1. Files")
+    print("2. Notes")
+    print("3. Passwords")
+    print("4. Bye-bye!")
+    option = input(Select program: )
+
+    if option == "1":
+      file_manager()
+    elif option == "2":
+      note_app()
+    elif option == "3":
+      password_manager()
+    elif option == "4"
+      print("logging out...")
+      break
+    else:
+      print("Not an option.")
     
 
 
