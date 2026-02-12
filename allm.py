@@ -7,12 +7,11 @@ def login():
   global usrname
   global cfp_hash
   usrname=input("Please input your username: ")
-  pwd=input("Please input a password that will be hashed: ")
+  pwd=input("Please input your password: ")
   cfp=input("Reenter the password: ")
   if cfp==pwd:
     print("Thank you.")
     cfp_hash=hash_password(cfp)
-    print("Your password is:", cfp_hash)
     lockscreen()
   else:
     print("PASSWORDS DO NOT MATCH")
@@ -22,14 +21,16 @@ def lockscreen():
   global cfp_hash
   global usrname
   print("Welcome to ALLM OS")
-  un=input("Enter your username: ")
-  pw=input(f"Enter {un}'s password: ")
-  if un==usrname and pw==cfp_hash:
-    print("Welcome to ALLM OS!")
-    allmos()
-  else:
-    print("Invalid username or password.")
-    lockscreen()
+
+  while True:
+    un=input("Enter your username: ")
+    pw=input(f"Enter {un}'s password: ")
+    if un==usrname and hash_password(pw)==cfp_hash:
+      print("Welcome to ALLM OS!")
+      allmos()
+      break
+    else:
+      print("Invalid username or password.")
     
 
 
