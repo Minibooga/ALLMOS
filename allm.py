@@ -18,7 +18,7 @@ def login():
     login()
 
 def lockscreen():
-  global cfp
+  global cfp_hash
   global usrname
   print("Welcome to ALLM OS")
   un=input("Enter your username: ")
