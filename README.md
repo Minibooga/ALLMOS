@@ -1,2 +1,4 @@
 # ALLMOS
+<img width="128" height="128" alt="ALLM" src="https://github.com/user-attachments/assets/e507e451-a95f-41d8-a457-e44db3d58e56" />
 A Python based os
+This has been my dream, to make an OS, and now, its happening. Please, feel free to commit in any way you can!
