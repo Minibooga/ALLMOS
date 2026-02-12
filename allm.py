@@ -7,8 +7,8 @@ def login():
   global usrname
   global cfp_hash
   usrname=input("Please input your username: ")
-  pwd=input("Please input your password: ")
-  cfp=input("Reenter your password: ")
+  pwd=input("Please input a password that will be hashed: ")
+  cfp=input("Reenter the password: ")
   if cfp==pwd:
     print("Thank you.")
     cfp_hash=hash_password(cfp)
