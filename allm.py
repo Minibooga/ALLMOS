@@ -12,6 +12,7 @@ def login():
   if cfp==pwd:
     print("Thank you.")
     cfp_hash=hash_password(cfp)
+    print("Your password is:", cfp_hash)
     lockscreen()
   else:
     print("PASSWORDS DO NOT MATCH")
